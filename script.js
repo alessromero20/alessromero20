@@ -33,18 +33,23 @@ let displayLink = document.querySelector(".display-link");
 //https://upload.wikimedia.org/wikipedia/en/c/ce/Young_and_Beautiful_cover_art.jpg
 //
 let imageURLs = [ "https://upload.wikimedia.org/wikipedia/en/c/ce/Young_and_Beautiful_cover_art.jpg", 
-  
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfqyaHcy8_Z4mitQNT5sKSha5wdBMD0Ff2A&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-D-6J26r-MNz4jNSLi6Z-4O4AmxCNBld7QQ&usqp=CAU",
+"", 
+""
 ]
 let songNamesList = [
   "Young and Beautiful", 
   "Bizcochito", 
   "Titi Me Pregunto", 
-  "Penny Lane"
+  "Penny Lane",
+  "In my Life"
   ]
 let artistsList = [
   "Lana Del Rey", 
   "Rosalia", 
   "Bad Bunny", 
+  "The Beatles",
   "The Beatles"
   ]
 let songLinksList = [
