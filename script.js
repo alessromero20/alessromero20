@@ -56,43 +56,45 @@ let displayLink = document.querySelector(".display-link");
 
 // task 12: create an object for each of your songs.
 let songOne = {
-  imageURL: "https://variancemagazine.com/images/lana-del-rey-young-beautiful.png", 
-  songName: "Young and Beautiful", 
-  artist: "Lana Del Rey", 
+  imageURL: "https://variancemagazine.com/images/lana-del-rey-young-beautiful.png",
+  songName: "Young and Beautiful",
+  artist: "Lana Del Rey",
   songLink: "https://youtu.be/o_1aF54DO60",
 }
 
 let songTwo = {
-  imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfqyaHcy8_Z4mitQNT5sKSha5wdBMD0Ff2A&usqp=CAU", 
-  songName: "Bizcochito", 
-  artist: "Rosalia", 
+  imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfqyaHcy8_Z4mitQNT5sKSha5wdBMD0Ff2A&usqp=CAU",
+  songName: "Bizcochito",
+  artist: "Rosalia",
   songLink: "https://youtu.be/aG5C32aATKc",
 }
 
 let songThree = {
-  imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-D-6J26r-MNz4jNSLi6Z-4O4AmxCNBld7QQ&usqp=CAU", 
-  songName: "Titi Me Pregunto", 
-  artist: "Bad Bunny", 
+  imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-D-6J26r-MNz4jNSLi6Z-4O4AmxCNBld7QQ&usqp=CAU",
+  songName: "Titi Me Pregunto",
+  artist: "Bad Bunny",
   songLink: "https://youtu.be/Cr8K88UcO0s",
 }
 
 let songFour = {
   imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSkjM356coHrjKjvDvQuMdzNFwRgpSeuNRA&usqp=CAU",
-  songName: "Penny Lane", 
-  artist: "The Beatles", 
+  songName: "Penny Lane",
+  artist: "The Beatles",
   songLink: "https://www.youtube.com/watch?v=z7syIxQCquo",
 }
 
 let songFive = {
-  imageURL: "https://images.hindustantimes.com/img/2022/06/09/1600x900/bts-proof-album_1653669893020_1654759516087.jfif", 
-  songName: "Run BTS", 
-  artist: "BTS", 
+  imageURL: "https://images.hindustantimes.com/img/2022/06/09/1600x900/bts-proof-album_1653669893020_1654759516087.jfif",
+  songName: "Run BTS",
+  artist: "BTS",
   songLink: "https://youtu.be/a4YwJCZRh5M",
 }
+
+
 // task 13: inside each object, add key/value pairs to store the image url, song name, artist, and song link.
 // task 14: create an array that stores all of the objects.
 
-let allSongs = [songOne, songTwo, songThree, songFour, songFive, newSong]
+let allSongs = [songOne, songTwo, songThree, songFour, songFive]
 
 
 
@@ -104,25 +106,33 @@ let allSongs = [songOne, songTwo, songThree, songFour, songFive, newSong]
 
 
 
-
+/*let songFive = {
+  imageURL: "https://images.hindustantimes.com/img/2022/06/09/1600x900/bts-proof-album_1653669893020_1654759516087.jfif",
+  songName: "Run BTS",
+  artist: "BTS",
+  songLink: "https://youtu.be/a4YwJCZRh5M",
+}*/
 
 function addSongInfo() {
 
-// task 9: declare a variable to save the user input of the image url. Declare three more variables that save user input: One for the song names, one for the artists, and a last one for the song links.
+  // task 9: declare a variable to save the user input of the image url. Declare three more variables that save user input: One for the song names, one for the artists, and a last one for the song links.
 
   userImageInput = image.value
   userSongNameInput = songName.value
   userArtistInput = artist.value
   userSongLinkInput = songLink.value
-// task 10: use `.push()` to add each input value to the correct array.
 
   let newSong = {
-    artist:userArtistInput,
-    songName:userSongNameInput,
-    imageURL:userImageInput,
-    songLink:userSongLinkInput
-  };
+    imageURL: userImageInput,
+    songName: userSongNameInput,
+    artist: userArtistInput,
+    songLink:userSongLinkInput,
+  }
+
+  allSongs.push(newSong)
 }
+// task 10: use `.push()` to add each input value to the correct array.
+
 
 
 
@@ -140,31 +150,31 @@ function emptyDisplay() {
 
 function displaySongInfo() {
 
-// task 8: loop through your images array and display the images to your songs in the correct div. Create three more loops. One for the song names, one for the artists, and a last one for the song links.
+  // task 8: loop through your images array and display the images to your songs in the correct div. Create three more loops. One for the song names, one for the artists, and a last one for the song links.
 
-//   imageURLsList.forEach(function(image) {
-// 	displayImage.insertAdjacentHTML('beforeend', `<img src= ${image}>`)
-//  })
+  //   imageURLsList.forEach(function(image) {
+  // 	displayImage.insertAdjacentHTML('beforeend', `<img src= ${image}>`)
+  //  })
 
-// songNamesList.forEach(function(songName) {
-// 	displaySong.insertAdjacentHTML('beforeend', `<p>${songName}</p>`)
-//  })
+  // songNamesList.forEach(function(songName) {
+  // 	displaySong.insertAdjacentHTML('beforeend', `<p>${songName}</p>`)
+  //  })
 
-// artistsList.forEach(function(artist) {
-// 	displayArtist.insertAdjacentHTML('beforeend', `<p>${artist}</p>`)
-//  })
+  // artistsList.forEach(function(artist) {
+  // 	displayArtist.insertAdjacentHTML('beforeend', `<p>${artist}</p>`)
+  //  })
 
-// songLinksList.forEach(function(songLink) {
-// 	displayLink.insertAdjacentHTML('beforeend', `<p>${songLink}</p>`)
-//  })
+  // songLinksList.forEach(function(songLink) {
+  // 	displayLink.insertAdjacentHTML('beforeend', `<p>${songLink}</p>`)
+  //  })
 
-  allSongs.forEach(function(song){
+  allSongs.forEach(function(song) {
     displayImage.insertAdjacentHTML('beforeend', `<img src= ${song.imageURL}>`)
     displaySong.insertAdjacentHTML('beforeend', `<p>${song.songName}</p>`)
     displayArtist.insertAdjacentHTML('beforeend', `<p>${song.artist}</p>`)
     displayLink.insertAdjacentHTML('beforeend', `<a href=${song.songLink} target="_blank">${song.songName}</a>`)
   })
-    
+
 }
 
 
@@ -178,4 +188,4 @@ add.onclick = function() {
 };
 
 // function call to display stored songs
-document.addEventListener("DOMContentLoaded",   displaySongInfo);
+document.addEventListener("DOMContentLoaded", displaySongInfo);
